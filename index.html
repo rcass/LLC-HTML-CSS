@@ -62,18 +62,17 @@
 
   <div id="presentation">
   <!-- **************************************** -->
+    
+    <article class='slide slide-list' style="text-align:center;">
+      <h1 style="top:16%;">Ladies Learning Code<br>
+      Introduction to HTML &amp; CSS</h1>
+      <p class="sponsor" style="margin:160px 0 0;">In partnership with:<br>
+      <img src="assets/telus.png" width="200" alt="Telus logo" style="border:none;"></p>
+      <!-- <h3>Your instructor today is:</h3>
+      <p>Your name/picture</p>
+      <p>website<br>Twitter, etc</p> -->
 
-    <!-- SLIDE: Workshop intro -->
-    <article class='slide slide-title'>
-      <div class="workshop_title">
-        <h2>Welcome to Ladies Learning Code's</h2>
-        <h1>Introduction to HTML &amp; CSS</h1>
-      </div>
-
-        <br  clear="left" />
-      <h3>Instructed by: Rose Cass</h3>
-      <p><a href="http://www.twitter.com/rcass" target="_blank">@rcass</a></p>
-      <p style="padding-top: 55px; margin-bottom: 0; font-size: 0.9em; color: #999;">
+      <p style="margin-bottom: 0; font-size: 0.9em; color: #999;">
         Thanks to <a href="http://twitter.com/pearlchen">Pearl Chen</a> and <a href="http://twitter.com/markreale">Mark Reale</a> for creating the foundation for today's content.</p>
     </article>
 
@@ -87,13 +86,13 @@
     <!-- SLIDE: Course Outline -->
     <article class='slide slide-list'>
       <h2>Course Outline</h2>
-      <h3 style="margin-top: 1em;">First portion (usually completed before lunch):</h3>
+      <h3 style="margin-top: 1em;">Morning:</h3>
       <ul>
         <li>Intro to HTML</li>
         <li>Write the HTML for your project</li>
         <li>Intro to CSS</li>
       </ul>
-      <h3 style="margin-top: 1em;">Second portion (usually completed after lunch)</h3>
+      <h3 style="margin-top: 1em;">Afternoon</h3>
       <ul>
         <li>More CSS</li>
         <li>Final touches</li>
@@ -108,7 +107,7 @@
       <ul>
         <li><strong>Sublime Text</strong> (<a href="http://www.sublimetext.com/">link</a>) - a popular text editor that highlights your code and has other helpful features.</li>
         <li><strong>Google Chrome</strong> (<a href="https://www.google.com/intl/en/chrome/browser/">link</a>) - Choose a modern web browser that has good development tools to help make building web pages easier. <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> is a good option, too! You'll also want to make one of these modern browsers your <em>default</em> browser. <a href="https://support.google.com/chrome/answer/95417?hl=en">Here are the instructions</a>.</li>
-        <li><strong>Today's slides and files</strong> (<a href="https://github.com/rcass/LLC-HTML-CSS">link</a>). You'll see a "Download Zip" button on the bottom right of the page. Click it! To open the slides, unzip the folder (on Windows, right click and select "Extract All"). Right click on "index.html" or "index" and "Open in Chrome".</li>
+        <li><strong>Today's slides and files</strong> (<a href="https://github.com/tessa-lt/LLC-HTML-CSS">link</a>). You'll see a "Download Zip" button on the bottom right of the page. Click it! To open the slides, unzip the folder (on Windows, right click and select "Extract All"). Right click on "index.html" or "index" and "Open in Chrome".</li>
       </ul>
     </article>
 
@@ -423,7 +422,7 @@ p {
       <p>Let's learn to add images to our webpages. Note that image tags are unique in that they are "self-closing" - there is no closing tag.</p>
       <p>Let's start by adding an image that is hosted online. Here's the code:</p>
       <pre><code class="language-markup">
-        &lt;img src="http://placekitten.com/g/200/200"&gt;
+        &lt;img src="http://placekitten.com/g/200/300"&gt;
       </code></pre>
       <p>Try copying and pasting that line of code into your project, right under the opening <code>&lt;body&gt;</code> tag.</p>
       <p>Next, try finding a different image online and replacing the kitten photo.</p>
@@ -1456,8 +1455,7 @@ h1, h2, h3 {
       <h2>Getting the links to work</h2>
       <p>We need to match the links in our menu to the sections on our page.</p>
       <p>We can do this by adding an <code>id</code> attribute to each section that matches the link <code>href</code> (minus the <code>#</code> part):</p>
-<pre><code class="language-markup">
-&lt;section id="about" class="about box">&lt;/section>
+<pre><code class="language-markup">&lt;section id="about" class="about box">&lt;/section>
 &lt;section id="favourites" class="favourites box">&lt;/section>
 &lt;section id="contact" class="contact box">&lt;/section>
 </code></pre>
@@ -1473,17 +1471,24 @@ h1, h2, h3 {
     </article>
 
     <!-- SLIDE Next Steps -->
-    <article class="slide slide-subhead">
-      <h1>Next Steps: Hosting</h1>
-      <h2>Right now your website only lives on your laptop, but if you'd like to get it hosted online for free, <a href="http://thephuse.com/development/hosting-static-sites-on-github-for-beginners/">check out this tutorial on hosting with Github</a>. If you've purchased website hosting and want to upload your projects, <a href="http://www.wpbeginner.com/beginners-guide/how-to-use-ftp-to-upload-files-to-wordpress-for-beginners/">learn about uploading with FTP.</a></h2>
-    </article>
+    <article class="slide slide-list">
+      <h2>Next Steps: Getting your site online</h2>
+      <p>You will need to register a domain name (www.mysite.com) and get hosting. Here are a couple domain &amp; hosting suggestions:</p>
+      <ul>
+        <li><a href="http://hover.com/ladiescode">hover.com</a> - Domain registration</li>
+        <li><a href="http://www.dreamhost.com/r.cgi?2085384">dreamhost.com</a> - Domain and hosting - Use coupon code <strong>LLC40</strong> to get $40 off your registration!</li>
+      </ul>
+      <p>To get your files online, you will need upload your files to your newly purchased hosting server. There are a few pieces of information you will need and are usually provided to you by your hosting service provider.</p>
 
-    <!-- SLIDE Next Steps -->
-    <article class="slide slide-subhead">
-      <h1>Next Steps: Mobile</h1>
-      <h2>Your site may be beautiful, but it might not be very mobile-friendly. Luckily, that's easy enough to fix once you learn about mobile web design and development.</h2>
-      <h2>Ladies Learning Code regularly offers "Intro to Mobile Web" workshops - perhaps we'll see you at the next one?</h2>
-      <h2><a href="http://ladieslearningcode.com/events">Check out our upcoming events across Canada here.</a></h2>
+      <ul>
+        <li>FTP Address</li>
+        <li>Username</li>
+        <li>Password</li>
+      </ul>
+
+      <p>Here’s a nice tutorial getting your files online using FileZilla: <a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_%28en%29">FileZilla Client Tutorial</a>  </p>
+
+      <p>Feeling adventurous? Try <a href="http://thephuse.com/development/hosting-static-sites-on-github-for-beginners/">Hosting Static Sites on Github for Beginners</a>.</p>
     </article>
 
     <article class='slide slide-subhead'>
